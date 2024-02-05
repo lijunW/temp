@@ -1,0 +1,70 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width,initial-scale=1.0,user-scalable=0">
+    <title>宠物朋友圈邀请</title>
+    <link rel="icon" href="/favicon.ico"/>
+    <link rel="stylesheet" href="/statics/css/link/friend.css">
+</head>
+<body>
+    <div id='weixin-tip-box' style="display: none; position: fixed; right: 0; top: 4px; align-items: center; z-index: 99999;">
+        <div class="triangle_border_up" style="width: 0; height: 0; border-width: 0 6px 12px; border-style: solid; border-color: transparent transparent #333333; margin-left: 114px;">
+            <span></span>
+        </div>
+        <div class="weixin-tip" style="background: #333333; z-index: 100; padding: 8px; border-radius: 8px; margin-right: 8px;">
+            <p style="text-align: center; font-size: 15px; color: #FFFFFF;">
+                请点击右上角
+            </p>
+            <p class="content" style="text-align: center; font-size: 15px; color: #FFFFFF;">
+                选择"浏览器中打开"
+            </p>
+        </div>
+    </div>
+    <div class="box_bg">
+        <div class="main">
+            <div class="avatar">
+                <img src="https://petstore.deering.cn/user/avatar/1704962828629000.jpg" alt="">
+                <div>乌拉</div>
+            </div>
+            <div class="text">
+                <p class="text_content">
+                    Hi~朋友：<br>
+                    &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;邀请你加入「宠圈」，创建属于自己的宠物朋友圈~<br>
+                    &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;这里有很多好玩可爱的宠物以及它们有趣的主人~<br>
+                    &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;让我们一起玩耍吧!
+                </p>
+            </div>
+        </div>
+        <div class="center_btn">
+            <div class="center_btn_img">
+                <img src="/statics/img/link/pet_icon.png" alt="">
+            </div>
+            <div class="btn open_app_click">
+                <a class="btnOpenApp">接受邀请</a>
+            </div>
+        </div>
+        <div class="footer">
+            <img src="/statics/img/link/logo_in.png" alt="">
+            <div>
+                宠圈，宠物朋友圈
+            </div>
+        </div>
+    </div>
+    <script src="/statics/js/link/jquery-3.1.1.min.js"></script>
+    <script type="text/javascript" src="//cmy2.t4m.cn/applink.js"></script>
+    <script>
+        
+            MobLink({
+                  el: '.btnOpenApp',
+                  path: '/openType/18',
+                  default: true,
+                  params: {
+                      "openType": '18',
+                      "invite": 'value2',
+                  }
+             });
+        
+    </script>
+</body>
+</html>
